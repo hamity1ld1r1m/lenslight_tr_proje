@@ -15,6 +15,7 @@ const photoSchema = new Schema({
   },
   uploadedAt: {
     type: Date,
+    
     default: Date.now,
   },
   user: {
