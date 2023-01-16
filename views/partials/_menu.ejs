@@ -11,17 +11,17 @@
             <div class="navbar-area" style="float: right;">
                <nav class="site-navbar">
                   <ul>
-                     <li><a class="<%= link === '/' && 'active' %>" href="/">Home</a></li>
-                     <li><a class="<%= link === 'about' && 'active' %>" href="/about">About</a></li>
-                     <li><a class="<%= link === 'photos' && 'active' %>" href="/photos">Photos</a></li>
-                     <li><a class="<%= link === 'contact' && 'active' %>" href="/contact">Contact</a></li>
+                     <li><a class="<%= link === '/' && 'active' %>" href="/">Anasayfa</a></li>
+                     <li><a class="<%= link === 'about' && 'active' %>" href="/about">Hakkında</a></li>
+                     <li><a class="<%= link === 'photos' && 'active' %>" href="/photos">Fotoğraflar</a></li>
+                     <li><a class="<%= link === 'contact' && 'active' %>" href="/contact">İletişim</a></li>
                      <% if (user){ %>
-                        <li><a class="<%= link === 'users' && 'active' %>" href="/users">Users</a></li>
-                        <li><a class="<%= link === 'dashboard' && 'active' %>" href="/users/dashboard">Dashboard</a></li>
-                        <li><a href="/logout">Logout</a></li>
+                        <li><a class="<%= link === 'users' && 'active' %>" href="/users">Kullancılar</a></li>
+                        <li><a class="<%= link === 'dashboard' && 'active' %>" href="/users/dashboard">Profilim</a></li>
+                        <li><a href="/logout">Çıkış Yap</a></li>
                         <% } else { %>
-                           <li><a class="<%= link === 'login' && 'active' %>" href="/login">Login</a></li>
-                           <li><a class="<%= link === 'register' && 'active' %>" href="/register">Register</a></li>
+                           <li><a class="<%= link === 'login' && 'active' %>" href="/login">Giriş Yap</a></li>
+                           <li><a class="<%= link === 'register' && 'active' %>" href="/register">Kayıt Ol</a></li>
                            <% } %>
                               <!-- <li><a class="<%= link === 'services' && 'active' %>" href="/services">Services</a></li>
                       <li><a class="<%= link === 'projects' && 'active' %>" href="/projects">Projects</a></li>
