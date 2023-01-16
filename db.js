@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-mongoose.set('strictQuery', false);
+mongoose.set('strictQuery', true);
 
 const conn = () => {
     mongoose.connect(process.env.DB_URI, {
