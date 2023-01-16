@@ -19,7 +19,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="titlepage text_align_center">
-                <h2>Welcome <%= user.username %>
+                <h2>Merhaba Ben <%= user.username %>
                 </h2>
               </div>
             </div>
@@ -27,11 +27,18 @@
           <div class="row">
             <div class="col-md-12">
               <div class="satteb text_align_center">
-                <p>fact that a reader will be distracted by the readable content of a page when looking at its
-                  layout.
+                <p>Doğa fotoğrafçıları, doğal ortamda çektikleri görüntüleri almak için özel bir dikkat gerektirir. Aşağıdaki noktalar, doğa fotoğrafçıları için önemlidir:</p>
+
+                 <p> Doğal ışık: Doğa fotoğrafçıları, doğal ışığı kullanarak görüntüleri çekmeye özen göstermelidir. Özellikle sabah ve akşam saatlerinde çekilen görüntüler, güzel renkler ve gölgeler sunar.</p>
+                  
+                 <p> Perspektif: Doğa fotoğrafçıları, doğal ortamda çektikleri görüntülerde perspektifin önemini anlamalıdır. Örneğin, yerden çekilen görüntüler, bölgenin bütününü gösterirken, uçaktan çekilen görüntüler, bölgenin genişliğini gösterir.</p>
+                  
+                 <p> Çekim pozisyonu: Doğa fotoğrafçıları, çekim yaptıkları bölgenin doğal ortamını dikkate almalıdır. Örneğin, bir nehir kenarındaki su göstergesini çekmek için, su seviyesinde çekim yapmalıdır.</p>
+                  
+                 <p>Doğal ortamı koruma: Doğa fotoğrafçıları, doğal ortamı koruma konusunda dikkatli olmalıdır. Çekim yaptıkları bölgenin doğal ortamını kirletmemek için özen göstermelidir.</p>
+                  
+                 <p>Çekim teknikleri: Doğa fotoğrafçıları, doğal ortamda çekim yaptıklarında, çekim teknikleri konusunda uzman olmalıdır. Örneğin, hareketli nesneleri çekmek için hızlı çekim hızları gereklidir.</p>
                 </p>
-                <h3>The point of using </h3>
-                <i><img src="/images/custo.jpg" alt="#" /></i>
               </div>
             </div>
           </div>
@@ -47,10 +54,10 @@
 
               <% if (!inFollowers) { %>
                 <a style="margin:20px auto;" class="read_more"
-                  href="/users/<%= user._id %>/follow?_method=PUT">FOLLOW</a>
+                  href="/users/<%= user._id %>/follow?_method=PUT">TAKİP ET</a>
                 <% } else { %>
                   <a style="margin:20px auto;" class="read_more"
-                    href="/users/<%= user._id %>/unfollow?_method=PUT">UNFOLLOW</a>
+                    href="/users/<%= user._id %>/unfollow?_method=PUT">TAKİPTEN ÇIK</a>
                   <% } %>
             </div>
           </div>
@@ -62,7 +69,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="titlepage text_align_center">
-                <h2>My Photos</h2>
+                <h2>Benim Fotoğraflarım</h2>
               </div>
             </div>
           </div>

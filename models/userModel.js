@@ -8,20 +8,20 @@ const userSchema = new Schema(
   {
     username: {
       type: String,
-      required: [true, 'Username area is required'],
+      required: [true, 'Kullancı Alanı Gereklidir.'],
       lowercase: true,
-      validate: [validator.isAlphanumeric, 'Only Alphanumeric characters'],
+      validate: [validator.isAlphanumeric, 'İngilice Karakter Kullanınız.'],
     },
     email: {
       type: String,
-      required: [true, 'Email area is required'],
+      required: [true, 'E-Mail Alanı Gereklidir. '],
       unique: true,
-      validate: [validator.isEmail, 'Valid email is required'],
+      validate: [validator.isEmail, 'Geçerli Bir E-Mail Giriniz'],
     },
     password: {
       type: String,
-      required: [true, 'Password area is required'],
-      minLength: [4, 'At least 4 characters'],
+      required: [true, 'Şifre Alanı Gereklidir.'],
+      minLength: [4, 'Lütfen En Az 4 Karakter Giriniz'],
     },
     followers: [
       {

@@ -24,7 +24,7 @@
                            <%= photo.description %>
                         </p>
                         <a class="read_more" href="/users/<%= photo.user._id %>">
-                           Artist: <%= photo.user.username %>
+                           Sanatçı : <%= photo.user.username %>
                         </a>
 
                         <% if (isOwner) { %>
@@ -32,10 +32,10 @@
                            <div style="margin-top: 30px ;">
                               <ul style="display: flex; justify-content: space-between;">
                                  <li><button style="min-width: 266px;" class="read_more" data-toggle="modal"
-                                       data-target="#updateModal">Update</button></li>
+                                       data-target="#updateModal">Güncelle</button></li>
                                  <li><a style="min-width: 266px;" class="read_more"
                                        href="/photos/<%= photo._id %>?_method=DELETE"
-                                       onclick="return confirm('Do you want to delete the photo')">Delete</a></li>
+                                       onclick="return confirm('Bu Fotoğrafı Gerçekten Silmek İstiyor Musun ?')">Sil</a></li>
                               </ul>
                            </div>
 
@@ -69,7 +69,7 @@
          font-size: 30px;
          margin-bottom: 20px;
          color: #D43A8E;
-     ">Add New Photo</h2>
+     ">Fotoğrafımı Güncelle</h2>
                            </div>
                         </div>
                         <div class="col-md-10 offset-md-1">
@@ -77,12 +77,12 @@
                               action="/photos/<%= photo._id %>?_method=PUT" enctype="multipart/form-data">
                               <div class="row">
                                  <div class="col-md-12">
-                                    <input value="<%= photo.name %>" class="form_control" placeholder="Name" type="text"
+                                    <input value="<%= photo.name %>" class="form_control" placeholder="Adı" type="text"
                                        name="name">
                                  </div>
                                  <div class="col-md-12">
                                     <textarea name="description" style="height: 150px;" class="form_control"
-                                       placeholder="Description" rows="5"><%= photo.description %></textarea>
+                                       placeholder="Konusu" rows="5"><%= photo.description %></textarea>
                                  </div>
 
                                  <div style="margin-bottom: 20px ;" class="col-md-12">
@@ -91,7 +91,7 @@
 
                                  <div class="col-md-12">
                                     <div class="group_form">
-                                       <button class="read_more">Update Photo</button>
+                                       <button class="read_more">Fotoğrafı Güncelle</button>
                                     </div>
                                  </div>
                               </div>
